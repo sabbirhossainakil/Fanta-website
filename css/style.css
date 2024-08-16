@@ -1,0 +1,248 @@
+@font-face {
+  font-family: Product Sans;
+  src: url(../Fonts/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+  font-family: Product Sans B;
+  src: url(../Fonts/Product\ Sans\ Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Product Sans;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: orangered;
+}
+/* ====================================================== */
+.header {
+  background-color: rgb(218, 102, 60);
+  padding: 30px 0px;
+}
+
+.header .navbar_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navbar_wrap .navbar_brand {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header .navbar_wrap .navbar_collapse ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header .navbar_wrap .navbar_collapse ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.header .navbar_wrap .navbar_collapse ul li a:hover {
+  color: rgb(255, 255, 255, 0.8);
+}
+/* ========================= */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+.hero h1 {
+  font-size: 25vw;
+  font-family: Product Sans B;
+  color: #fff;
+}
+.hero #fanta {
+  position: absolute;
+  width: 40%;
+  z-index: 2;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.hero #orange-cut {
+  position: absolute;
+  top: 10%;
+  left: 32%;
+  width: 15%;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.hero #orange {
+  position: absolute;
+  width: 20%;
+  z-index: 3;
+  top: 55%;
+  right: 30%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.hero #leaf {
+  top: 10%;
+  left: 0%;
+  transform: rotate(60deg);
+  position: absolute;
+  width: 18%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.hero #leaf2 {
+  top: 70%;
+  left: 80%;
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 12%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.hero #leaf3 {
+  position: absolute;
+  width: 20%;
+  top: 10%;
+  right: 0%;
+}
+/* ========================= */
+.about {
+  width: 100%;
+  height: 100vh;
+  background: #f7674d;
+}
+.about .lft-two svg {
+  margin-top: 25vh;
+  width: 90%;
+  transform: rotateX(50deg);
+}
+.about .rght-two {
+  margin-top: 13vw;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.about .rght-two h1 {
+  color: #fff;
+  font-size: 5vw;
+}
+
+.about .rght-two p {
+  font-size: 2vw;
+  color: #fff;
+}
+.about .rght-two .about_btn .btn-primary {
+  background-color: #fff;
+  color: #f7674d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.about .rght-two .about_btn .btn-primary:hover {
+  background-color: #000;
+  color: #fff;
+}
+.services {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw; */
+  width: 100%;
+  /* height: 100vh; */
+  background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+  padding: 100px 0px;
+}
+.services .service .service_card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 25vw;
+  height: 75vh;
+  margin-top: 10vh;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.services .service .service_card h1 {
+  margin-top: 45vh;
+  font-size: 3vw;
+}
+
+.services .service .service_card button {
+  font-size: 1vw;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  background-color: rgb(255, 149, 0);
+  padding: 1vw 2vw;
+}
+
+.services .service .service_card #cocacola {
+  top: -15%;
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.services .service .service_card #pepsi {
+  top: -15%;
+  position: absolute;
+  width: 85%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.services .service .service_card .lemon {
+  top: -30%;
+  position: absolute;
+  left: 50%;
+  width: 25vw;
+  transform: translate(-50%, 0%);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.contact {
+  background-color: rgb(218, 102, 60);
+  /* padding: 30px 0px; */
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  width: 100%;
+  height: 100vh;
+}
